@@ -1,0 +1,83 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\rodrigo.rebes\\OneDrive - Anheuser-Busch InBev\\My Documents\\Projetos_Teste\\VShop\\VShopWeb\\VShopWeb.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\rodrigo.rebes\\OneDrive - Anheuser-Busch InBev\\My Documents\\Projetos_Teste\\VShop\\VShopWeb\\VShopWeb.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rodrigo.rebes\\OneDrive - Anheuser-Busch InBev\\My Documents\\Projetos_Teste\\VShop\\VShopWeb\\VShopWeb.csproj",
+        "projectName": "VShopWeb",
+        "projectPath": "C:\\Users\\rodrigo.rebes\\OneDrive - Anheuser-Busch InBev\\My Documents\\Projetos_Teste\\VShop\\VShopWeb\\VShopWeb.csproj",
+        "packagesPath": "C:\\Users\\rodrigo.rebes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rodrigo.rebes\\OneDrive - Anheuser-Busch InBev\\My Documents\\Projetos_Teste\\VShop\\VShopWeb\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rodrigo.rebes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.22.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
