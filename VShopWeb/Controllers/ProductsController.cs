@@ -26,7 +26,7 @@ public class ProductsController : Controller
         var result = await _productService.GetAllProduct(await GetAccessToken());
 
         if (result is null)
-            return View("Error");
+            return RedirectToAction("Login", "Home"); ;
 
         return View(result);
     }
