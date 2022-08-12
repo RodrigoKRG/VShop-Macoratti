@@ -14,8 +14,8 @@ namespace VShop.IdentityServer.Services
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IUserClaimsPrincipalFactory<ApplicationUser> _userClaimsPrincipalFactory;
 
-        public ProfileAppService(UserManager<ApplicationUser> userManager, 
-            RoleManager<IdentityRole> roleManager, 
+        public ProfileAppService(UserManager<ApplicationUser> userManager,
+            RoleManager<IdentityRole> roleManager,
             IUserClaimsPrincipalFactory<ApplicationUser> userClaimsPrincipalFactory)
         {
             _userManager = userManager;
@@ -25,16 +25,16 @@ namespace VShop.IdentityServer.Services
 
         public async Task GetProfileDataAsync(ProfileDataRequestContext context)
         {
-            //id do usuário do IS
+            //id do usuário no IS
             string id = context.Subject.GetSubjectId();
             //localiza o usuário pelo id
-            ApplicationUser user = await _userManager.FindByNameAsync(id);
+            ApplicationUser user = await _userManager.FindByIdAsync(id);
 
-            //cria ClaimsPrincipal para o usuário
-            ClaimsPrincipal userClaims = await _userClaimsPrincipalFactory.CreateAsync(user);
-
-            //define uma coleçao de claims para o usuário
-            //e inclui o sobrenome e o nome do usário
+            //cria ClaimsPrincipal para o usuario
+            ClaimsPrincipal userClaims = await _userClaimsPrincipalFactory
+                                               .CreateAsync(user);
+            //define uma coleção de claims para o usuário
+            //e inclui o sobrenome e o nome do usuário
             List<Claim> claims = userClaims.Claims.ToList();
             claims.Add(new Claim(JwtClaimTypes.FamilyName, user.LastName));
             claims.Add(new Claim(JwtClaimTypes.GivenName, user.FirstName));
