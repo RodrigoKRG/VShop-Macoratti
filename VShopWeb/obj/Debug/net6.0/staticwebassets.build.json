@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5+Z7bNLe23wGBlBvKzJL6jHShERzcdy4OJo9tWowDXE=",
+  "Hash": "6o6Y57/6JyBCOb8IH1q0+gYrxmD18Ytc/xEkFMLZLBM=",
   "Source": "VShopWeb",
   "BasePath": "_content/VShopWeb",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\rodrigo.rebes\\OneDrive - Anheuser-Busch InBev\\My Documents\\Projetos_Teste\\VShop\\VShopWeb\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\VShopWeb.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\rodrigo.rebes\\OneDrive - Anheuser-Busch InBev\\My Documents\\Projetos_Teste\\VShop\\VShopWeb\\wwwroot\\css\\product.css",
+      "SourceId": "VShopWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rodrigo.rebes\\OneDrive - Anheuser-Busch InBev\\My Documents\\Projetos_Teste\\VShop\\VShopWeb\\wwwroot\\",
+      "BasePath": "_content/VShopWeb",
+      "RelativePath": "css/product.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\product.css"
     },
     {
       "Identity": "C:\\Users\\rodrigo.rebes\\OneDrive - Anheuser-Busch InBev\\My Documents\\Projetos_Teste\\VShop\\VShopWeb\\wwwroot\\css\\site.css",

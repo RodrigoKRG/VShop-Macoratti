@@ -9,7 +9,6 @@ namespace VShop.ProductApi.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-[Authorize]
 public class ProductsController : ControllerBase
 {
 
@@ -43,6 +42,7 @@ public class ProductsController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Roles = Role.Admin)]
     public async Task<ActionResult> Post([FromBody] ProductDTO productsDto)
     {
         if (productsDto == null)
@@ -54,6 +54,7 @@ public class ProductsController : ControllerBase
     }
 
     [HttpPut]
+    [Authorize(Roles = Role.Admin)]
     public async Task<ActionResult> Put([FromBody] ProductDTO productsDto)
     {
         if (productsDto == null)

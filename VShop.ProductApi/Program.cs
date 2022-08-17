@@ -51,6 +51,15 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy",
+        builder => builder.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader());
+});
+
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
@@ -87,6 +96,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("CrosPolicy");
+app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
